@@ -1,20 +1,51 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
+import { Link } from "react-router-dom";
+import './index.css';
 // import App from './App';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 
-function Content(){
+function Parent(props){
+  const [ name, setName ] = useState('Thakur');
+
+  const nameChange = useCallback(() => {
+    setName('Arslan');
+  });
+
   return(
-    <div>
+    <>
       <Header/>
-      <Footer/>
-    </div>
+      <h1 className='head'>Sticky footer with fixed navbar</h1>
+      <p className='pgra'>Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. 
+        A fixed navbar has been added with padding-top: 60px; on the <strong> main  .container.</strong> </p>
+        <p className='pgra'>Back to <link to="/">the default sticky footer</link>minus the navbar.</p>
+       {/* <Footer/>
+       <h1>What is your Name:</h1>
+       <h2>My Name: { name }</h2>
+       <h3>Your ID: {props.empID}</h3>
+       <button onClick={ nameChange }>Name Change</button>
+       <Child name="Arslan" empID="4"/> */}
+    </>
   );
 }
 
-ReactDOM.render(<Content/>,
+// function Child(props){
+//   return(
+//     <div>
+//       <h1>What is your Name is:</h1>
+//        <h2>My Name is: {props.name}</h2>
+//        <h3>Your ID is: {props.empID}</h3>
+//     </div>
+//   );
+// }
+
+// Parent.defaultProps={
+//   name: "Shani",
+//   empID: "1"
+// }
+
+ReactDOM.render(<Parent/>,
 document.getElementById('root')
 
 );
