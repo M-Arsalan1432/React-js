@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import Header from './Header';
+
 // import Footer from './Footer';
 
 function Parent() {
@@ -11,6 +12,7 @@ function Parent() {
   return(
     <>
       <Header/>
+      
       <h1 className='head'>Sticky footer with fixed navbar</h1>
       <p className='pgra'>Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. 
         A fixed navbar has been added with padding-top: 60px; on the <strong> main  .container.</strong> </p>
