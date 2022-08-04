@@ -9,3 +9,7 @@
 .images{
     height: 600px;
 }
+
+.carousel-control-next, .carousel-control-prev{
+    width: 4% !important ; 
+}
