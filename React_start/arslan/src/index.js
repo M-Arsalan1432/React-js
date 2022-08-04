@@ -13,8 +13,8 @@ function Parent() {
     <>
       <Header/>
       
-      <h1 className='head'>Sticky footer with fixed navbar</h1>
-      <p className='pgra'>Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. 
+       <h1 className='head'>Sticky footer with fixed navbar</h1>
+       <p className='pgra'>Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. 
         A fixed navbar has been added with padding-top: 60px; on the <strong> main  .container.</strong> </p>
         {/* <p className='pgra'>Back to <Link to="/">the default sticky footer</Link>minus the navbar.</p> */}
        {/* <Footer/>
